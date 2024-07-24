@@ -1,0 +1,5 @@
+D:\OneDrive\Documents\Programming\CSharp\VisualLog\bin\Release\net8.0-windows\publish\VisualLog.exe
+D:\OneDrive\Documents\Programming\CSharp\VisualLog\bin\Release\net8.0-windows\publish\VisualLog.dll
+D:\OneDrive\Documents\Programming\CSharp\VisualLog\bin\Release\net8.0-windows\publish\VisualLog.deps.json
+D:\OneDrive\Documents\Programming\CSharp\VisualLog\bin\Release\net8.0-windows\publish\VisualLog.runtimeconfig.json
+D:\OneDrive\Documents\Programming\CSharp\VisualLog\bin\Release\net8.0-windows\publish\VisualLog.pdb

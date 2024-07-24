@@ -1,0 +1,5 @@
+D:\Downloads\VisualLog.exe
+D:\Downloads\VisualLog.dll
+D:\Downloads\VisualLog.deps.json
+D:\Downloads\VisualLog.runtimeconfig.json
+D:\Downloads\VisualLog.pdb
