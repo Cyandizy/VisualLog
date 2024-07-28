@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\Documents\\Programming\\CSharp\\VisualLog\\VisualLog.csproj",
+      "projectUniqueName": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\VisualLog.csproj",
       "projectName": "VisualLog",
-      "projectPath": "D:\\OneDrive\\Documents\\Programming\\CSharp\\VisualLog\\VisualLog.csproj",
+      "projectPath": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\VisualLog.csproj",
       "packagesPath": "C:\\Users\\lynzi\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\Documents\\Programming\\CSharp\\VisualLog\\obj\\",
+      "outputPath": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lynzi\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,12 +9,40 @@ namespace VisualLog
     {
         public static List<string> logData = new List<string>();
         private static int logNumber = 0;
-        public static string logNumberD3 = string.Empty;
-        public static bool debugMode = true;
+        public static string logNumberD3 = "";
+        public static bool debugMode = false;
+        private static bool customSaveLocation = true;
+
+        private static string LoadFile()
+        {
+            string dataFile;
+            if (customSaveLocation)
+            {
+                string? path = Environment.GetEnvironmentVariable("MyData");
+                if (!string.IsNullOrEmpty(path))
+                {
+                    Log($"File loaded from {path}");
+                    dataFile = Path.Combine(path, "TextLogData.json");
+                    return dataFile;
+                }
+                else
+                {
+                    Log("Custom save location not set up, using the default setting");
+                    dataFile = "LogData.json";
+                    return dataFile;
+                }
+            }
+            else
+            {
+                Log("File loaded");
+                dataFile = "LogData.json";
+                return dataFile;
+            }
+        }
 
         public static void LoadData()
         {
-            string dataFile = "LogData.json";
+            string dataFile = LoadFile();
             if (File.Exists(dataFile))
             {
                 try
@@ -23,41 +51,57 @@ namespace VisualLog
                     if (dataJson != null)
                     {
                         logData = JsonSerializer.Deserialize<List<string>>(dataJson)!;
-                        log("Data loaded");
+                        Log("Data loaded");
 
                         return;
                     }
                 }
-                catch
+                catch (JsonException ex)
                 {
-                    log("Saved data not found or damaged");
+                    Log($"Saved data not found or damaged : {ex.Message}");
+                }
+                catch (IOException ex)
+                {
+                    Log($"Error reading the file: {ex.Message}");
                 }
             }
-            return;
+            else
+            {
+                Log("Data file does not exist.");
+            }
         }
 
         public static void SaveData()
         {
-            string dataFile = "LogData.json";
-            using FileStream createStream = File.Create(dataFile);
-            JsonSerializer.SerializeAsync(createStream, logData);
-
-            log("Data saved to json");
+            string dataFile = LoadFile();
+            if (File.Exists(dataFile))
+            {
+                try
+                {
+                    using FileStream createStream = File.Create(dataFile);
+                    JsonSerializer.Serialize(createStream, logData);
+                    Log("Data saved to json");
+                }
+                catch (IOException ex)
+                {
+                    Log($"Error writing the file: {ex.Message}");
+                }
+            }
         }
 
         public static void AppendData(string userInput)
         {
             logData.Add(userInput);
-            log("Data appended to the list");
+            Log("Data appended to the list");
         }
 
         public static void DeleteData(string userInput)
         {
             logData.Remove(userInput);
-            log("Data deleted from the list");
+            Log("Data deleted from the list");
         }
 
-        public static void log(string message)
+        public static void Log(string message)
         {
             if (debugMode)
             {
@@ -70,7 +114,5 @@ namespace VisualLog
             }
             return;
         }
-
-
     }
 }

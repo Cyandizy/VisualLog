@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VisualLog
-build_property.ProjectDir = D:\OneDrive\Documents\Programming\CSharp\VisualLog\
+build_property.ProjectDir = D:\OneDrive\Documents\Programming\GitHub\VisualLog\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

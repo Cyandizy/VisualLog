@@ -20,7 +20,7 @@ namespace VisualLog
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            if (textBox.Text.Length > 0)
+            if (!string.IsNullOrEmpty(textBox.Text))
             {
                 string userInput = GetUserInput();
                 CreateLog(userInput);
@@ -61,7 +61,7 @@ namespace VisualLog
             TextLogModel.AppendData(userInput);
 
             textBox.Text = string.Empty;
-            TextLogModel.log("textBox emptied");
+            TextLogModel.Log("textBox emptied");
 
             return userInput;
         }
@@ -81,8 +81,9 @@ namespace VisualLog
 
             textGrid.ColumnDefinitions.Add(col1);
             textGrid.ColumnDefinitions.Add(col2);
-            TextLogModel.log("CreateLog (1/6): Columns defined");
+            TextLogModel.Log("CreateLog (1/6): Columns defined");
 
+            //Date and time portion of the text is exactly 23
             string time = text.Substring(0, 23);
             string content = text.Substring(23);
 
@@ -110,7 +111,7 @@ namespace VisualLog
             };
 
             Grid.SetColumn(textBlock, 0);
-            TextLogModel.log("CreateLog (2/6): Columns set");
+            TextLogModel.Log("CreateLog (2/6): Columns set");
 
             Button deleteButton = new Button()
             {
@@ -125,16 +126,16 @@ namespace VisualLog
             deleteButton.Click += (s, e) => Delete_Click(s, e);
 
             Grid.SetColumn(deleteButton, 1);
-            TextLogModel.log("CreateLog (3/6): deleteButton created");
+            TextLogModel.Log("CreateLog (3/6): deleteButton created");
 
             textGrid.Children.Add(textBlock);
-            TextLogModel.log("CreateLog (4/6): textBlock added to textGrid");
+            TextLogModel.Log("CreateLog (4/6): textBlock added to textGrid");
 
             textGrid.Children.Add(deleteButton);
-            TextLogModel.log("CreateLog (5/6): deleteButton added to textGrid");
+            TextLogModel.Log("CreateLog (5/6): deleteButton added to textGrid");
 
             textPanel.Children.Add(textGrid);
-            TextLogModel.log("CreateLog (finished): textGrid added to textPanel");
+            TextLogModel.Log("CreateLog (finished): textGrid added to textPanel");
 
         }
 
@@ -148,7 +149,7 @@ namespace VisualLog
                 }
                 return;
             }
-            TextLogModel.log("No saved data.");
+            TextLogModel.Log("No saved data.");
             return;
         }
 
