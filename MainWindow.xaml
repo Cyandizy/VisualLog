@@ -43,7 +43,6 @@
         </Grid.RowDefinitions>
         <ScrollViewer Name="scrollViewer" DockPanel.Dock="Top" Grid.Row="0" Background="Black" BorderBrush="Black">
             <StackPanel Name="textPanel">
-                <Button Foreground="#FFFFFF" FontWeight="Bold" Click="Load_Click" Style="{StaticResource HoverButtonStyle}">Load</Button>
             </StackPanel>
         </ScrollViewer>
         <Grid Background="Black" Grid.Row="1">

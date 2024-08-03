@@ -76,16 +76,17 @@ namespace VisualLog
             string dataFile = LoadFile();
             if (File.Exists(dataFile))
             {
-                try
-                {
-                    using FileStream createStream = File.Create(dataFile);
-                    JsonSerializer.Serialize(createStream, logData);
-                    Log("Data saved to json");
-                }
-                catch (IOException ex)
-                {
-                    Log($"Error writing the file: {ex.Message}");
-                }
+                Log("File does not exist, the data will be written in a new file.");
+            }
+            try
+            {
+                using FileStream createStream = File.Create(dataFile);
+                JsonSerializer.Serialize(createStream, logData);
+                Log("Data saved to json");
+            }
+            catch (IOException ex)
+            {
+                Log($"Error writing the file: {ex.Message}");
             }
         }
 

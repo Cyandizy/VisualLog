@@ -14,6 +14,11 @@ namespace VisualLog
         {
             InitializeComponent();
             TextLogModel.LoadData();
+            if (TextLogModel.logData != null && TextLogModel.logData.Count != 0) 
+            {
+                Button loadButton = CreateLoadButton();
+                textPanel.Children.Add(loadButton);
+            }
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
@@ -32,11 +37,14 @@ namespace VisualLog
 
         private void Hide_Click(object sender, RoutedEventArgs e)
         {
-            textPanel.Children.Clear();
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            Button deleteButton = CreateLoadButton();
-            textPanel.Children.Add(deleteButton);
+            if (TextLogModel.logData != null && TextLogModel.logData.Count != 0)
+            {
+                textPanel.Children.Clear();
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                Button deleteButton = CreateLoadButton();
+                textPanel.Children.Add(deleteButton);
+            }
         }
 
 
@@ -159,7 +167,7 @@ namespace VisualLog
         {
             Button loadButton = new Button()
             {
-                Content = "Load",
+                Content = "Load Existing Logs",
                 Foreground = Brushes.White,
                 FontWeight = FontWeights.Bold,
                 Style = (Style)FindResource("HoverButtonStyle")
