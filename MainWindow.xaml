@@ -36,13 +36,14 @@
             
         </Window.Resources>
         
-    <Grid x:Name="mainGrid">
+    <Grid Name="mainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"></RowDefinition>
             <RowDefinition Height="1*"></RowDefinition>
         </Grid.RowDefinitions>
-        <ScrollViewer x:Name="scrollViewer" DockPanel.Dock="Top" Grid.Row="0" Background="Black" BorderBrush="Black">
-            <StackPanel x:Name="textPanel">
+        <ScrollViewer Name="scrollViewer" DockPanel.Dock="Top" Grid.Row="0" Background="Black" BorderBrush="Black">
+            <StackPanel Name="textPanel">
+                <Button Foreground="#FFFFFF" FontWeight="Bold" Click="Load_Click" Style="{StaticResource HoverButtonStyle}">Load</Button>
             </StackPanel>
         </ScrollViewer>
         <Grid Background="Black" Grid.Row="1">
@@ -50,10 +51,12 @@
                 <ColumnDefinition Width="8*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="textBox" Grid.Column="0" Background="#111111" Foreground="White" BorderBrush="#333333" BorderThickness="0" VerticalAlignment="Center" FontSize="20" KeyDown="TextBoxKeyDown" Margin="5"></TextBox>
-            <Button x:Name="clearButton"  Grid.Column="2" Background="Black" Foreground="#045de1" FontWeight="Bold" Click="Clear_Click" Style="{StaticResource HoverButtonStyle}">Clear</Button>
-            <Button x:Name="addButton" Grid.Column="1" Background="Black" Foreground="#045de1"  FontWeight="Bold" Click="Add_Click" Style="{StaticResource HoverButtonStyle}">Add</Button>
+            <TextBox Name="textBox" Grid.Column="0" Background="#111111" Foreground="White" BorderBrush="#333333" BorderThickness="0" VerticalAlignment="Center" FontSize="20" KeyDown="TextBoxKeyDown" Margin="5" ></TextBox>
+            <Button Name="addButton" Grid.Column="1" Background="Black" Foreground="#045de1"  FontWeight="Bold" Click="Add_Click" Style="{StaticResource HoverButtonStyle}">Add</Button>
+            <Button Name="clearButton"  Grid.Column="2" Background="Black" Foreground="#045de1" FontWeight="Bold" Click="Clear_Click" Style="{StaticResource HoverButtonStyle}">Clear</Button>
+            <Button Name="hideButton"  Grid.Column="3" Background="Black" Foreground="#045de1" FontWeight="Bold" Click="Hide_Click" Style="{StaticResource HoverButtonStyle}">Hide</Button>
         </Grid>
     </Grid>
 </Window>

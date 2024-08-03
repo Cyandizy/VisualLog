@@ -1,6 +1,4 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 
@@ -18,13 +16,13 @@ namespace VisualLog
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            RenderOptions.ProcessRenderMode = RenderMode.SoftwareOnly; 
+            RenderOptions.ProcessRenderMode = RenderMode.SoftwareOnly;
         }
 
         private void App_Exit(object sender, ExitEventArgs e)
         {
             TextLogModel.SaveData();
-            
+
         }
     }
 

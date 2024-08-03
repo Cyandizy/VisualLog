@@ -4,6 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Xml;
 
 namespace VisualLog
 {
@@ -12,10 +13,7 @@ namespace VisualLog
         public MainWindow()
         {
             InitializeComponent();
-
             TextLogModel.LoadData();
-
-            LoadData(TextLogModel.logData);
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
@@ -32,9 +30,26 @@ namespace VisualLog
             textBox.Text = string.Empty;
         }
 
+        private void Hide_Click(object sender, RoutedEventArgs e)
+        {
+            textPanel.Children.Clear();
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            Button deleteButton = CreateLoadButton();
+            textPanel.Children.Add(deleteButton);
+        }
+
+
+        private void Load_Click(object sender, RoutedEventArgs e)
+        {
+            textPanel.Children.Clear();
+            LoadData();
+        }
+
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button btn) {
+            if (sender is Button btn)
+            {
                 var textGrid = btn.Parent as Grid;
                 btn.Click -= Delete_Click;
 
@@ -53,6 +68,7 @@ namespace VisualLog
                 }
             }
         }
+        
         private string GetUserInput()
         {
             DateTime localTime = DateTime.Now;
@@ -139,8 +155,23 @@ namespace VisualLog
 
         }
 
-        private void LoadData(List<string> logData)
+        private Button CreateLoadButton()
         {
+            Button loadButton = new Button()
+            {
+                Content = "Load",
+                Foreground = Brushes.White,
+                FontWeight = FontWeights.Bold,
+                Style = (Style)FindResource("HoverButtonStyle")
+            };
+            loadButton.Click += (s, e) => Load_Click(s, e);
+
+            return loadButton;
+        }
+
+        private void LoadData()
+        {
+            List<string> logData = TextLogModel.logData;
             if (logData != null)
             {
                 foreach (string log in logData)

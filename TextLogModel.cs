@@ -10,7 +10,7 @@ namespace VisualLog
         public static List<string> logData = new List<string>();
         private static int logNumber = 0;
         public static string logNumberD3 = "";
-        public static bool debugMode = false;
+        public static bool debugMode = true;
         private static bool customSaveLocation = true;
 
         private static string LoadFile()
