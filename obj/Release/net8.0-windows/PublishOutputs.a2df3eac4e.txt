@@ -1,5 +1,0 @@
-D:\VisualLog.exe
-D:\VisualLog.dll
-D:\VisualLog.deps.json
-D:\VisualLog.runtimeconfig.json
-D:\VisualLog.pdb

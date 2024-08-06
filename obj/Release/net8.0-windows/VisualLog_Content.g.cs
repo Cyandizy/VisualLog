@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mini_programs.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("visuallog.ico")]
 
 

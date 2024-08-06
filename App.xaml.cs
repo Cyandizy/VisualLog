@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
+using VisualLog.Models;
 
 namespace VisualLog
 {
@@ -9,8 +10,11 @@ namespace VisualLog
     /// </summary>
     public partial class App : Application
     {
+        private LogDataService _logDataService;
+
         public App()
         {
+            _logDataService = new LogDataService();
             this.Exit += new ExitEventHandler(App_Exit);
         }
         protected override void OnStartup(StartupEventArgs e)
@@ -21,8 +25,10 @@ namespace VisualLog
 
         private void App_Exit(object sender, ExitEventArgs e)
         {
-            TextLogModel.SaveData();
-
+            if (!String.IsNullOrEmpty(LogData.FilePath) && LogData.DataList.Count != 0)
+            {
+                _logDataService.SaveData();
+            }
         }
     }
 

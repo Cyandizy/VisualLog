@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>mini_programs.ico</ApplicationIcon>
+    <ApplicationIcon>visuallog.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="mini_programs.ico" />
+    <Content Include="visuallog.ico" />
   </ItemGroup>
 
 </Project>
