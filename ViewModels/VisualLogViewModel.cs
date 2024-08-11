@@ -54,12 +54,5 @@ namespace VisualLog.ViewModels
             return _logDataService.HasData();
         }
 
-        /*
-        public event PropertyChangedEventHandler? PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        */
     }
 }

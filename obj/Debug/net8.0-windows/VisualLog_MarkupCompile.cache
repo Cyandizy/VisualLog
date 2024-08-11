@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\App.xaml
-11500309718
+2-695594581
 1-775305341
-91202768975
+11-540169777
 198-635017904
-Views\VisualLogWindow.xaml;
+MainWindow.xaml;Views\VisualLogView.xaml;
 
 False
 

@@ -23,12 +23,10 @@ D:\OneDrive\Documents\Programming\GitHub\VisualLog\bin\Debug\net8.0-windows\Visu
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\bin\Debug\net8.0-windows\VisualLog.runtimeconfig.json
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\bin\Debug\net8.0-windows\VisualLog.dll
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\bin\Debug\net8.0-windows\VisualLog.pdb
-D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\Views\VisualLogWindow.g.cs
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\App.g.cs
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog_Content.g.cs
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog_MarkupCompile.cache
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog_MarkupCompile.lref
-D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\Views\VisualLogWindow.baml
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog.g.resources
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog.GeneratedMSBuildEditorConfig.editorconfig
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog.AssemblyInfoInputs.cache
@@ -40,3 +38,7 @@ D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\refi
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog.pdb
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\VisualLog.genruntimeconfig.cache
 D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\ref\VisualLog.dll
+D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\Views\VisualLogView.g.cs
+D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\MainWindow.baml
+D:\OneDrive\Documents\Programming\GitHub\VisualLog\obj\Debug\net8.0-windows\Views\VisualLogView.baml

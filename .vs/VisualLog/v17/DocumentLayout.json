@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\views\\visuallogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:views\\visuallogwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\views\\visuallogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:views\\visuallogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\visuallog.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:visuallog.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\models\\logdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:models\\logdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\views\\visuallogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:views\\visuallogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\viewmodels\\visuallogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:viewmodels\\visuallogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\views\\visuallogwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:views\\visuallogwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\models\\debugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:models\\debugservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\models\\logdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:models\\logdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\models\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:models\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|d:\\onedrive\\documents\\programming\\github\\visuallog\\models\\logdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{311E0F36-D854-4AB0-8BE6-073F9F58015E}|VisualLog.csproj|solutionrelative:models\\logdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,112 +54,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VisualLog",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\VisualLog.csproj",
-              "RelativeDocumentMoniker": "VisualLog.csproj",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\VisualLog.csproj",
-              "RelativeToolTip": "VisualLog.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-06T05:34:38.483Z",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-11T05:21:19.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VisualLogWindow.xaml",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogWindow.xaml",
-              "RelativeDocumentMoniker": "Views\\VisualLogWindow.xaml",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogWindow.xaml",
-              "RelativeToolTip": "Views\\VisualLogWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T04:49:27.971Z",
+              "DocumentIndex": 5,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T05:21:18.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DebugService.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\DebugService.cs",
+              "RelativeDocumentMoniker": "Models\\DebugService.cs",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\DebugService.cs",
+              "RelativeToolTip": "Models\\DebugService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T05:21:02.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "ApplicationSettings.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\ApplicationSettings.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationSettings.cs",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\ApplicationSettings.cs",
+              "RelativeToolTip": "Models\\ApplicationSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T05:20:13.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VisualLogViewModel.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\ViewModels\\VisualLogViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\VisualLogViewModel.cs",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\ViewModels\\VisualLogViewModel.cs",
+              "RelativeToolTip": "ViewModels\\VisualLogViewModel.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAADwvzcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T06:58:29.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T04:41:28.405Z",
+              "WhenOpened": "2024-08-10T06:28:59.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DebugService.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\DebugService.cs",
-              "RelativeDocumentMoniker": "Models\\DebugService.cs",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\DebugService.cs",
-              "RelativeToolTip": "Models\\DebugService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "DocumentIndex": 0,
+              "Title": "VisualLogView.xaml",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogView.xaml",
+              "RelativeDocumentMoniker": "Views\\VisualLogView.xaml",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogView.xaml",
+              "RelativeToolTip": "Views\\VisualLogView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T04:49:27.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VisualLogView.xaml.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\VisualLogView.xaml.cs",
+              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogView.xaml.cs",
+              "RelativeToolTip": "Views\\VisualLogView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG0AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T04:32:37.847Z"
+              "WhenOpened": "2024-08-06T03:35:18.579Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\App.xaml.cs",
-              "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\App.xaml.cs",
-              "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwB0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T03:59:51.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VisualLogWindow.xaml.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\VisualLogWindow.xaml.cs",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Views\\VisualLogWindow.xaml.cs",
-              "RelativeToolTip": "Views\\VisualLogWindow.xaml.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAQwLoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T03:35:18.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VisualLogViewModel.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\ViewModels\\VisualLogViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\VisualLogViewModel.cs",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\ViewModels\\VisualLogViewModel.cs",
-              "RelativeToolTip": "ViewModels\\VisualLogViewModel.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAYwBkAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T08:03:24.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "LogDataService.cs",
               "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\LogDataService.cs",
               "RelativeDocumentMoniker": "Models\\LogDataService.cs",
               "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\LogDataService.cs",
               "RelativeToolTip": "Models\\LogDataService.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAuwFsAAAAwAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAowAgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T09:10:24.615Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LogData.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\LogData.cs",
-              "RelativeDocumentMoniker": "Models\\LogData.cs",
-              "ToolTip": "D:\\OneDrive\\Documents\\Programming\\GitHub\\VisualLog\\Models\\LogData.cs",
-              "RelativeToolTip": "Models\\LogData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T08:02:52.762Z"
             }
           ]
         }
