@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:VisualLog"
         mc:Ignorable="d"
         Title="VisualLog" Height="auto" Width="auto"
-        Background="Black"
-        >
+        Background="Black">
+    
     <Page.Resources>
 
         <Style TargetType="ScrollBar">
@@ -33,29 +33,32 @@
             </Setter>
         </Style>
 
-
     </Page.Resources>
 
-    <Grid Name="mainGrid">
+    <Grid Name="MainGrid">
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="10*"></RowDefinition>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <ScrollViewer Name="scrollViewer" DockPanel.Dock="Top" Grid.Row="0" Background="Black" BorderBrush="Black">
-            <StackPanel Name="textPanel">
-            </StackPanel>
+
+        <ScrollViewer DockPanel.Dock="Top" Grid.Row="0" Background="Black" BorderBrush="Black">
+            <StackPanel Name="LogPanel"/>
         </ScrollViewer>
+
         <Grid Background="Black" Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="8*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
-                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
-            <TextBox Name="textBox" Grid.Column="0" Background="#111111" Foreground="White" BorderBrush="#333333" BorderThickness="0" VerticalAlignment="Center" FontSize="20" KeyDown="TextBoxKeyDown" Margin="5" ></TextBox>
-            <Button Name="addButton" Grid.Column="1" Background="Black" Foreground="#045de1"  FontWeight="Bold" Click="Add_Click" Style="{StaticResource HoverButtonStyle}">Add</Button>
-            <Button Name="hideButton"  Grid.Column="2" Background="Black" Foreground="#045de1" FontWeight="Bold" Click="Hide_Click" Style="{StaticResource HoverButtonStyle}">Hide</Button>
-            <Button Name="savePathButton"  Grid.Column="3" Background="Black" Foreground="#045de1" FontWeight="Bold" Style="{StaticResource HoverButtonStyle}">Save Path</Button>
+
+            <TextBox Name="InputTextBox" KeyDown="TextBoxKeyDown" Grid.Column="0" Background="#111111" Foreground="White" BorderBrush="#333333" BorderThickness="0" VerticalAlignment="Center" FontSize="20"  Margin="5" />
+            <Button Name="AddButton" Content="Add" Click="Add_Click" Grid.Column="1" Background="Black" Foreground="#045de1" FontWeight="Bold"  Style="{StaticResource HoverButtonStyle}" />
+            <Button Name="HideButton" Content="Hide" Click="Hide_Click" Grid.Column="2" Background="Black" Foreground="#045de1" FontWeight="Bold" Style="{StaticResource HoverButtonStyle}" />
+            <Button Name="SavePathButton" Content="Save Path" Grid.Column="3" Background="Black" Foreground="#045de1" FontWeight="Bold" Style="{StaticResource HoverButtonStyle}" />
+            
         </Grid>
     </Grid>
 </Page>

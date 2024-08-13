@@ -22,13 +22,13 @@ namespace VisualLog.Views
             if (viewModel.HasData())
             {
                 Button loadButton = CreateLoadButton();
-                textPanel.Children.Add(loadButton);
+                LogPanel.Children.Add(loadButton);
             }
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox.Text))
+            if (!string.IsNullOrEmpty(InputTextBox.Text))
             {
                 string userInput = GetUserInput();
                 CreateLog(userInput);
@@ -39,17 +39,17 @@ namespace VisualLog.Views
         {
             if (viewModel.HasData())
             {
-                textPanel.Children.Clear();
+                LogPanel.Children.Clear();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
                 Button deleteButton = CreateLoadButton();
-                textPanel.Children.Add(deleteButton);
+                LogPanel.Children.Add(deleteButton);
             }
         }
 
         private void Load_Click(object sender, RoutedEventArgs e)
         {
-            textPanel.Children.Clear();
+            LogPanel.Children.Clear();
             LoadExistingLogs();
         }
 
@@ -81,10 +81,10 @@ namespace VisualLog.Views
             //attaches date and time to user's input and empties the text box
             DateTime localTime = DateTime.Now;
             var culture = new CultureInfo("en-US");
-            string userInput = $"{localTime.ToString("yyyy-MM-dd hh:mm:ss tt", culture)}: {textBox.Text}";
+            string userInput = $"{localTime.ToString("yyyy-MM-dd hh:mm:ss tt", culture)}: {InputTextBox.Text}";
             viewModel.AppendData(userInput);
 
-            textBox.Text = string.Empty;
+            InputTextBox.Text = string.Empty;
             DebugService.Log("textBox emptied");
 
             return userInput;
@@ -159,7 +159,7 @@ namespace VisualLog.Views
             textGrid.Children.Add(deleteButton);
             DebugService.Log("CreateLog (5/6): deleteButton added to textGrid");
 
-            textPanel.Children.Add(textGrid);
+            LogPanel.Children.Add(textGrid);
             DebugService.Log("CreateLog (finished): textGrid added to textPanel");
 
         }
