@@ -1,4 +1,6 @@
-﻿namespace VisualLog.Models
+﻿using System.Collections.Generic;
+
+namespace VisualLog.Models
 {
     public static class LogData
     {
