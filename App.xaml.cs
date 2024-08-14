@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using WinForms = System.Windows.Forms;
+using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 using VisualLog.Models;
