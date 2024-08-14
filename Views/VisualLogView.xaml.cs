@@ -11,7 +11,9 @@ namespace VisualLog.Views
 {
     public partial class VisualLogView : Page
     {
+
         private VisualLogViewModel viewModel;
+
 
         public VisualLogView()
         {
@@ -26,6 +28,7 @@ namespace VisualLog.Views
             }
         }
 
+
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             if (!string.IsNullOrEmpty(InputTextBox.Text))
@@ -34,6 +37,7 @@ namespace VisualLog.Views
                 CreateLog(userInput);
             }
         }
+
 
         private void Hide_Click(object sender, RoutedEventArgs e)
         {
@@ -47,11 +51,13 @@ namespace VisualLog.Views
             }
         }
 
+
         private void Load_Click(object sender, RoutedEventArgs e)
         {
             LogPanel.Children.Clear();
             LoadExistingLogs();
         }
+
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
@@ -76,6 +82,7 @@ namespace VisualLog.Views
             }
         }
 
+
         private string GetUserInput()
         {
             //attaches date and time to user's input and empties the text box
@@ -89,6 +96,7 @@ namespace VisualLog.Views
 
             return userInput;
         }
+
 
         private void CreateLog(string text)
         {
@@ -164,6 +172,7 @@ namespace VisualLog.Views
 
         }
 
+
         private Button CreateLoadButton()
         {
             Button loadButton = new Button()
@@ -177,6 +186,7 @@ namespace VisualLog.Views
 
             return loadButton;
         }
+
 
         private void LoadExistingLogs()
         {
@@ -193,6 +203,7 @@ namespace VisualLog.Views
             return;
         }
 
+
         private void TextBoxKeyDown(object sender, KeyEventArgs e)
         {
             //allows users to use return key in a way equivalent to Add button
@@ -205,5 +216,10 @@ namespace VisualLog.Views
             return;
         }
 
+        private void SavePath_Click(object sender, EventArgs e)
+        {
+            viewModel.ChooseSavePath();
+        }
     }
+
 }

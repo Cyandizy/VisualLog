@@ -57,7 +57,7 @@
             <TextBox Name="InputTextBox" KeyDown="TextBoxKeyDown" Grid.Column="0" Background="#111111" Foreground="White" BorderBrush="#333333" BorderThickness="0" VerticalAlignment="Center" FontSize="20"  Margin="5" />
             <Button Name="AddButton" Content="Add" Click="Add_Click" Grid.Column="1" Background="Black" Foreground="#045de1" FontWeight="Bold"  Style="{StaticResource HoverButtonStyle}" />
             <Button Name="HideButton" Content="Hide" Click="Hide_Click" Grid.Column="2" Background="Black" Foreground="#045de1" FontWeight="Bold" Style="{StaticResource HoverButtonStyle}" />
-            <Button Name="SavePathButton" Content="Save Path" Grid.Column="3" Background="Black" Foreground="#045de1" FontWeight="Bold" Style="{StaticResource HoverButtonStyle}" />
+            <Button Name="SavePathButton" Content="Save Path" Click="SavePath_Click" Grid.Column="3" Background="Black" Foreground="#045de1" FontWeight="Bold" Style="{StaticResource HoverButtonStyle}" />
             
         </Grid>
     </Grid>
