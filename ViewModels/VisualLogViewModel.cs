@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using VisualLog.Models;
-using WinForms = System.Windows.Forms;
+
 
 namespace VisualLog.ViewModels
 {
@@ -12,11 +12,6 @@ namespace VisualLog.ViewModels
         {
             logDataService = new LogDataService();
             LoadDataFromFile();
-        }
-
-        private void LoadFile()
-        {
-            logDataService.LoadFile();
         }
 
         public void SaveData()
@@ -58,17 +53,7 @@ namespace VisualLog.ViewModels
 
         public void ChooseSavePath()
         {
-            WinForms.FolderBrowserDialog folderBrowserDialog = new WinForms.FolderBrowserDialog();
-            WinForms.OpenFileDialog openFileDialog = new WinForms.OpenFileDialog();
-            WinForms.DialogResult result = folderBrowserDialog.ShowDialog();
-
-            if (result == WinForms.DialogResult.OK)
-            {
-                string chosenPath = folderBrowserDialog.SelectedPath;
-                DebugService.Log(chosenPath);
-                
-            }
-
+            logDataService.ChooseSavePath();
         }
     }
 }

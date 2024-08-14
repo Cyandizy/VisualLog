@@ -47,11 +47,12 @@ namespace VisualLog.Views
         {
             if (viewModel.HasData())
             {
+                DebugService.Log("LogPanel cleared");
                 LogPanel.Children.Clear();
                 GC.Collect();
                 GC.WaitForPendingFinalizers();
-                Button deleteButton = CreateLoadButton();
-                LogPanel.Children.Add(deleteButton);
+                Button loadButton = CreateLoadButton();
+                LogPanel.Children.Add(loadButton);
             }
         }
 
@@ -194,6 +195,7 @@ namespace VisualLog.Views
 
         private void LoadExistingLogs()
         {
+            DebugService.Log("Loading existing logs");
             List<string> dataList = viewModel.GetDataList();
             if (dataList != null)
             {
@@ -223,6 +225,12 @@ namespace VisualLog.Views
         private void SavePath_Click(object sender, EventArgs e)
         {
             viewModel.ChooseSavePath();
+            if (viewModel.HasData())
+            {
+                LogPanel.Children.Clear();
+                Button loadButton = CreateLoadButton();
+                LogPanel.Children.Add(loadButton);
+            }
         }
     }
 

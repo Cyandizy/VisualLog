@@ -17,6 +17,7 @@ namespace VisualLog
 
         public App()
         {
+            ApplicationSettings.LoadSettings();
             _logDataService = new LogDataService();
             this.Exit += new ExitEventHandler(App_Exit);
         }

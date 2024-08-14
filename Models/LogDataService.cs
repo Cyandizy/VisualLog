@@ -3,6 +3,7 @@ using System.IO;
 using System.Text.Json;
 using System;
 using System.Windows.Documents;
+using WinForms = System.Windows.Forms;
 
 namespace VisualLog.Models
 {
@@ -10,26 +11,7 @@ namespace VisualLog.Models
     {
         public LogDataService() 
         {
-            LoadFile();
-        }
 
-        public void LoadFile()
-        {
-            string dataFile;
-
-            string? path = Environment.GetEnvironmentVariable("MyData");
-            if (!string.IsNullOrEmpty(path))
-            {
-                DebugService.Log($"File loaded from {path}");
-                dataFile = Path.Combine(path, "TextLogData.json");
-            }
-            else
-            {
-                DebugService.Log("Custom save location not set up, using the default setting");
-                dataFile = "LogData.json";
-            }
-
-            LogData.FilePath = dataFile;
         }
 
         public List<string> LoadDataFromFile()
@@ -44,7 +26,7 @@ namespace VisualLog.Models
                         var logData = JsonSerializer.Deserialize<List<string>>(dataJson);
                         if (logData != null)
                         {
-                            DebugService.Log("Data loaded");
+                            DebugService.Log($"Data loaded from {LogData.FilePath}");
                             LogData.DataList = logData;
                             return logData;
                         }
@@ -105,6 +87,32 @@ namespace VisualLog.Models
         public List<string> GetDataList()
         {
             return LogData.DataList;
+        }
+
+        public void ChooseSavePath()
+        {
+            WinForms.FolderBrowserDialog folderBrowserDialog = new WinForms.FolderBrowserDialog();
+            WinForms.OpenFileDialog openFileDialog = new WinForms.OpenFileDialog();
+            WinForms.DialogResult result = folderBrowserDialog.ShowDialog();
+
+            if (result == WinForms.DialogResult.OK)
+            {
+                string chosenPath = folderBrowserDialog.SelectedPath;
+                chosenPath = $"{chosenPath}\\{ApplicationSettings.SaveFileName}";
+                DebugService.Log($"Save path set to {chosenPath}");
+                MoveSavePath(chosenPath);
+            }
+        }
+
+        public void MoveSavePath(string newPath)
+        {
+            LogData.FilePath = newPath;
+
+            if (File.Exists(LogData.FilePath))
+            {
+                LoadDataFromFile();
+            }
+            ApplicationSettings.SaveSettings();
         }
 
     }
