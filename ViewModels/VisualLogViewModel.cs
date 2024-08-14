@@ -64,8 +64,9 @@ namespace VisualLog.ViewModels
 
             if (result == WinForms.DialogResult.OK)
             {
-                string folderName = folderBrowserDialog.SelectedPath;
-                DebugService.Log(folderName);
+                string chosenPath = folderBrowserDialog.SelectedPath;
+                DebugService.Log(chosenPath);
+                
             }
 
         }
