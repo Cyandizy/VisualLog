@@ -1,43 +1,44 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
 using VisualLog.Models;
+using WinForms = System.Windows.Forms;
 
 namespace VisualLog.ViewModels
 {
     public class VisualLogViewModel
     {
-        private LogDataService _logDataService;
+        private LogDataService logDataService;
 
         public VisualLogViewModel()
         {
-            _logDataService = new LogDataService();
+            logDataService = new LogDataService();
             LoadDataFromFile();
         }
 
         private void LoadFile()
         {
-            _logDataService.LoadFile();
+            logDataService.LoadFile();
         }
 
         public void SaveData()
         {
-            _logDataService.SaveData();
+            logDataService.SaveData();
         }
 
         public void LoadDataFromFile()
         {
-            _logDataService.LoadDataFromFile();
+            logDataService.LoadDataFromFile();
         }
 
         public List<string> GetDataList()
         {
-            return _logDataService.GetDataList();
+            return logDataService.GetDataList(); 
         }
 
         public void AppendData(string userInput)
         {
             if (LogData.DataList != null)
             {
-                _logDataService.AppendData(userInput);
+                logDataService.AppendData(userInput);
             }
         }
 
@@ -45,14 +46,28 @@ namespace VisualLog.ViewModels
         {
             if (LogData.DataList != null)
             {
-                _logDataService.DeleteData(userInput);
+                logDataService.DeleteData(userInput);
             }
         }
 
         public bool HasData()
         {
-            return _logDataService.HasData();
+            return logDataService.HasData();
         }
 
+
+        public void ChooseSavePath()
+        {
+            WinForms.FolderBrowserDialog folderBrowserDialog = new WinForms.FolderBrowserDialog();
+            WinForms.OpenFileDialog openFileDialog = new WinForms.OpenFileDialog();
+            WinForms.DialogResult result = folderBrowserDialog.ShowDialog();
+
+            if (result == WinForms.DialogResult.OK)
+            {
+                string folderName = folderBrowserDialog.SelectedPath;
+                DebugService.Log(folderName);
+            }
+
+        }
     }
 }
