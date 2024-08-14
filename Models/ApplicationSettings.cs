@@ -2,6 +2,6 @@
 {
     public static class ApplicationSettings
     {
-        public static bool DebugMode { get; set; } = false; //true allows debug messages
+        public static bool DebugMode { get; set; } = true; //true allows debug messages
     }
 }
